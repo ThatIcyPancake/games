@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <periodic comment="false" x="37" y="70">
+                            <group eventID="1" id="-1">
+                                <apply-filter comment="false" x="48" y="97">
+                                    <ACTOR eid="this" id="0"/>
+                                    <filter-tint comment="false" id="1" x="0" y="0">
+                                        <color b="0" g="0" id="0" r="204"/>
+                                        <int id="1" val="10"/>
+                                    </filter-tint>
+                                </apply-filter>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="this" id="2"/>
+                        </periodic>
+                        <dolater comment="false" x="37" y="149">
+                            <group eventID="1" id="-1">
+                                <die comment="false" x="48" y="176">
+                                    <ACTOR eid="this" id="0"/>
+                                </die>
+                            </group>
+                            <int id="0" val="1"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-game-val-0 comment="false" x="26" y="40">
+                    <int id="0" val="3"/>
+                </set-game-val-0>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
